@@ -24,9 +24,9 @@ h2 {
     font-size: 2rem;
 }
 
-.hidden {
+/* .hide {
     display: none;
-}
+} */
 
 .btn {
     text-decoration: none;
@@ -35,9 +35,25 @@ h2 {
     text-align: center;
     text-decoration: none;
     color: white;
-    background-color: blue;    
+    background-color: blue;  
+    border-radius: 5px;
+    box-shadow: 2px 3px grey;
+    color: white;
+    margin: 0 5px
+
 }
+
+.btn:hover {
+    transition: 0.5ms;
+    background-color:red;
+    color: white;
+    cursor: pointer;
+    border: 2px solid gold;
+}
+
 
 a {
     text-decoration: none;
+    color: white;
+    padding: 10px;
 }
