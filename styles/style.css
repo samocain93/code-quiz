@@ -5,69 +5,63 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* :root {
+ :root { 
  --main-bg-color: white;
  --ff-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 } 
 
 body {
-    background-color: white;
-    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    /* font-family: var(--ff-main); */
-/* }
+    /* background: #e8e3e4 */
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--ff-main); 
+
+ }
+
+ a {
+    font-family: var(--ff-main);
+ }
 
 h1 {
     font-size: 3rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 2rem;
-} */ */
+}
 
-/* .hide {
+.container {
+    display: flex;
+}
+
+.controls {
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+.hide {
     display: none;
-} */
+} 
 
-/* .btn {
+.btn {
     text-decoration: none;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.75rem;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -75,8 +69,7 @@ h2 {
     border-radius: 5px;
     box-shadow: 2px 3px grey;
     color: white;
-    margin: 0 5px
-
+    margin: 0 5px;
 }
 
 .btn:hover {
@@ -92,4 +85,4 @@ a {
     text-decoration: none;
     color: white;
     padding: 10px;
-} */
+} 
