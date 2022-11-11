@@ -4,7 +4,43 @@
     box-sizing: border-box;
 }
 
- :root {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* :root {
  --main-bg-color: white;
  --ff-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -13,8 +49,8 @@
 body {
     background-color: white;
     /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: var(--ff-main);
-}
+    /* font-family: var(--ff-main); */
+/* }
 
 h1 {
     font-size: 3rem;
@@ -22,13 +58,13 @@ h1 {
 
 h2 {
     font-size: 2rem;
-}
+} */ */
 
 /* .hide {
     display: none;
 } */
 
-.btn {
+/* .btn {
     text-decoration: none;
     font-size: 1.5rem;
     padding: 1rem;
@@ -56,4 +92,4 @@ a {
     text-decoration: none;
     color: white;
     padding: 10px;
-}
+} */
