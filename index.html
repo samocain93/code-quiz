@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://kit.fontawesome.com/cab1bce42c.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/cab1bce42c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Code Quiz</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div id="landing" class="card">
-            <h1>Do you want to play the Code Quiz?</h1>
-            <div class="controls">
-            <button class="btn" id="start-game">
-            <a href="/game.html" >Play</a><i class="fa-solid fa-gamepad"></i>
-            </button>
-            <button class= "btn" id="high-scores-btn">
-                <a href="./high-scores.html">High Scores</a><i class="fa-solid fa-chart-simple"></i>
-            </button>
-            </div>
+      <div id="landing" class="card">
+        <div class="title-card">
+          <h1>Let's Play: Code Quiz</h1>
+          <h2>Are you ready?</h2>
+          <p>
+            You will have 1 minute to answer 5 JavaScript related questions.
+          </p>
+          <p>
+            Each missed question will result in 10 seconds removed from your
+            remaining time.
+          </p>
+          <p>Good luck!</p>
         </div>
+        <div class="controls">
+          <button class="btn" id="start-game">
+            <a href="/game.html">Play</a><i class="fa-solid fa-gamepad"></i>
+          </button>
+          <button class="btn" id="high-scores-btn">
+            <a href="./high-scores.html">High Scores</a
+            ><i class="fa-solid fa-chart-simple"></i>
+          </button>
+        </div>
+      </div>
     </div>
 
-
-
-
-
     <script src="/js/main.js"></script>
-</body>
+  </body>
 </html>

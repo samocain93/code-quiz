@@ -99,6 +99,10 @@ height: 80vh;
     max-width: 80%;
 }
 
+.title-card {
+    text-align: center;
+}
+
 
 /* .hide {
     display: none;
@@ -109,15 +113,22 @@ height: 80vh;
 /* Game Page Styling */
 
 .game-container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: ;
+    width: 100vw;
+    height: 80vh;
+    margin: auto;
+    align-content: center;
+    justify-items: center;
 }
 
 .btn-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 #question-container {
