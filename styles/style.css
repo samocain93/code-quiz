@@ -2,7 +2,7 @@
 
 *,
 *::before,
-*:: after {
+*::after {
     box-sizing: border-box;
 }
 
@@ -57,7 +57,7 @@ h2 {
 
 .btn:hover {
     transition: 0.5ms;
-    background-color:red;
+    background-color: sandybrown;
     color: white;
     cursor: pointer;
     border: 2px solid gold;
@@ -128,7 +128,7 @@ height: 80vh;
 .btn-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 25px;
 }
 
 #question-container {
@@ -139,12 +139,23 @@ height: 80vh;
 
 .game-controls {
     text-align: center;
-    margin: 1rem;
-    padding: 1.5rem;
-
+    padding: 2rem;
 
 }
 
 .question-box {
     text-align: center;
+}
+
+.score-box{
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.correct {
+    background: green;
+}
+
+.incorrect {
+    background: red;
 }
