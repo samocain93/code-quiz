@@ -16,47 +16,15 @@
 
 // Build variables to link to html
 
-let question = document.getElementById("question")
-const startButton = document.getElementById("start-btn")
-const highScores = document.getElementById("high-scores-btn")
-const cardQuestion = document.getElementById("question")
-const cardAnswers = document.getElementById("answer-buttons")
+const questionEl = document.getElementById("question")
+const startButtonEl = document.getElementById("start-btn")
+const highScoresEl = document.getElementById("high-scores-btn")
+const cardEl = document.getElementById("question-container")
+const questionEl = document.getElementById("question")
+const answersEl = document.getElementById("answer-buttons")
 
-
-
-
-
-
-
-startButton.addEventListener("click", startGame)
-
-
-
-function startGame() {
-    questionsAsked = 0;
-    setNextQuestion()
-
-}
-
-
-function setNextQuestion() {
-    getRandomQuestion
-}
-
-
-function selectAnswer() {
-
-
-}
-
-function getRandomQuestion() {
-
-}
-
-
-
-
-
+let score = 0;
+let questionCounter = 0
 
 
 
@@ -105,3 +73,52 @@ const questions = [
     },
 
 ]
+
+
+
+
+
+
+
+startButton.addEventListener("click", startGame)
+
+
+
+function startGame() {
+
+    setNextQuestion()
+
+}
+
+
+function setNextQuestion() {
+    showQuestion(getRandomQuestion)
+}
+
+
+function showQuestion(question) {
+    cardQuestion.innerText = question.question
+}
+
+
+function selectAnswer() {
+
+
+}
+
+function getRandomQuestion() {
+
+}
+
+
+function hide(element) {
+    element.style.display = "none";
+}
+
+
+function show(element) {
+    element.style.display = "block";
+}
+
+
+

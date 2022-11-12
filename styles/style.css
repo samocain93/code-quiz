@@ -148,9 +148,12 @@ height: 80vh;
 }
 
 .score-box{
-    padding: 2rem;
+    padding: rem;
     margin-bottom: 3rem;
+
+
 }
+
 
 .correct {
     background: green;
@@ -163,3 +166,14 @@ height: 80vh;
 
 /* High Scores Page Styling */
 
+
+.score-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 25%;
+    margin: 0 auto;
+}
