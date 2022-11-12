@@ -1,6 +1,57 @@
-const question = document.getElementById("question");
-const startButton = document.getElementById("start-btn");
-const highScores = document.getElementById("high-scores-btn");
+// TO DO 
+// When you press play, game is started
+// High scores button is linked to high scores html page || done
+// When you press play, game is started and loads first question card
+// When play is clicked, new page opens, game starts and timer begins
+// When question answered correctly, score is added to update score.
+// If answered incorrectly, time is subtracted and goes to next question
+// When question is answered, corred and incorrect buttons change colors accordingly
+// Then, next question populates and current card is hidden
+// When quiz is over, option to enter initials is created and high scores is updated with new high score
+
+
+
+
+
+
+// Build variables to link to html
+
+let question = document.getElementById("question")
+const startButton = document.getElementById("start-btn")
+const highScores = document.getElementById("high-scores-btn")
+const cardQuestion = document.getElementById("question")
+const cardAnswers = document.getElementById("answer-buttons")
+
+
+
+
+
+
+
+startButton.addEventListener("click", startGame)
+
+
+
+function startGame() {
+    questionsAsked = 0;
+    setNextQuestion()
+
+}
+
+
+function setNextQuestion() {
+    getRandomQuestion
+}
+
+
+function selectAnswer() {
+
+
+}
+
+function getRandomQuestion() {
+
+}
 
 
 
@@ -9,6 +60,8 @@ const highScores = document.getElementById("high-scores-btn");
 
 
 
+
+// Variable of questions array for quiz
 const questions = [
     {
         question: "Inside which element do we put the JavaScript file?",
