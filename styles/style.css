@@ -1,9 +1,10 @@
+/* Universal Styling */
+
 *,
 *::before,
 *:: after {
     box-sizing: border-box;
 }
-
 
  :root { 
  --main-bg-color: white;
@@ -20,6 +21,10 @@ body {
     background-size: 100% 1.2em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: var(--ff-main); 
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 
  }
 
@@ -35,28 +40,6 @@ h1 {
 h2 {
     font-size: 2rem;
 }
-
-.container {
-    display: flex;
-}
-
-.controls {
-    text-align: center;
-}
-
-.card {
-    display: grid;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 80%;
-}
-
-.hide {
-    display: none;
-} 
 
 .btn {
     text-decoration: none;
@@ -86,3 +69,71 @@ a {
     color: white;
     padding: 10px;
 } 
+
+
+
+
+/* Home Page Styling */
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+width: 100vw;
+height: 80vh;
+
+}
+
+.controls {
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+
+/* .hide {
+    display: none;
+}  */
+
+
+
+/* Game Page Styling */
+
+.game-container {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: ;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#question-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-controls {
+    text-align: center;
+    margin: 1rem;
+    padding: 1.5rem;
+
+
+}
+
+.question-box {
+    text-align: center;
+}
