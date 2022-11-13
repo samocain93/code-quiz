@@ -4,43 +4,28 @@
 const questions = [
     {
         question: "Inside which element do we put the JavaScript file?",
-        choice1: ">Java>",
-        choice2: "<script>",
-        choice3: "<js>",
-        choice4: "<scripting>",
-        answer: 2
+        choices: ["<Java>", "<script>", "<js", "<scripting"],
+        answer: "<script>"
     },
     {
         question: "What is the correct way to write 'Hello World' to the alert box?",
-        choice1: "alertBox('Hello World')",
-        choice2: "Window.message('Hello World')",
-        choice3: "userPrompt('Hello World')",
-        choice4: "alert('Hello World')",
-        answer: 4
+        choices: ["alertBox('Hello World')", "userPrompt('Hello World')", "Window.message('Hello World')", "alert('Hello World')"],
+        answer: "alert('Hello World')"
     },
     {
         question: "How do you create a function in JavaScript?",
-        choice1: "function newFunction()",
-        choice2: "function = newFunction()",
-        choice3: "function = newFunction()",
-        choice4: "createFunction = new()",
-        answer: 1
+        choices: ["function newFunction()", "function = newFunction()", "function: newFunction()", "createFunction = new()"],
+        answer: "function newFunction()"
     },
     {
         question: "How does a for loop start?",
-        choice1: "for (i = 0, i < 10, i++)",
-        choice2: "for (i < 5; i++)",
-        choice3: "for (i = 0; i < 10; i++)",
-        choice4: "while (i = 0; i < 10; i++)",
-        answer: 3
+        choices: ["for (i = 0, i < 10, i++)", "for (i < 5; i++)", "for (i = 0; i < 10; i++)", "while (i = 0; i < 10; i++)"],
+        answer: "for (i = 0; i < 10; i++)"
     },
     {
         question: "How do you comment in JavaScript?",
-        choice1: "** This is a comment **",
-        choice2: "!-- This is a comment --!",
-        choice3: "<This is a comment>",
-        choice4: "// This is a comment",
-        answer: 4
+        choices: ["** This is a comment **", "!-- This is a comment --!", "<This is a comment>", "// This is a comment" ],
+        answer: "// This is a comment"
     },
 
 ]

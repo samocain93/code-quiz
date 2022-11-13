@@ -33,6 +33,7 @@ let questionCounter = 0
 var highScores = [];
 var interval;
 var timeRemaining = 60;
+var currentQuestion = 0;
 
 
 
@@ -51,8 +52,42 @@ function startTimer() {
         }
     }, 1000)
 }
-startTimer()
+// startTimer()
 
+// Stops timer interval
+function stopTimer() {
+    clearInterval(interval)
+}
+
+
+
+function setNextQuestion() {
+
+}
+
+
+function renderQuestion() {
+    
+}
+
+
+// NEXT STEPS !!!
+// Create get random question function
+// Get that function inside a render question function to display question and answers to card element
+// Set next question function which brings up new question 
+// If correct, highlight green and set next question 
+//  If wrong, highlight answer red and set next question and remove 5 seconds from timer
+// At end, hide question elements and bring up initials input (save to local storage)
+// Then take to high scores page
+// Option to clear high scores from memory or return to start of game 
+
+
+
+
+
+// How to access element in the array of objects
+// console.log(questions[0].question)
+// console.log(questions[1].question)
 
 
 
