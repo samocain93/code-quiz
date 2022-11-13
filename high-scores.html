@@ -9,9 +9,18 @@
     <title>High Scores</title>
 </head>
 <body>
-    <div class="score-container" id="high-scores">
+    <div class="input-score-container" id="input-score">
+        <h1 class="score-h1">Game Over!</h1>
+        <h3>Your Score: <span id="user-score"></span></h3>
+        <h3>Enter Initials: <input type="text" id="initials" placeholder="ABC"></h3>
+    </div>
+
+    <div class="high-scores-container" id="high-scores">
         <h1>High Scores</h1>
-        <div class="reset-container" id="scores"></div>
+        <div class="reset-container" id="scores">
+        
+        </div>
+        <br>
         <button type="button" class="btn" id="reset-game">
             <a href="./index.html">Reset Quiz</a>
          </button>

@@ -71,6 +71,8 @@ function renderQuestion() {
 }
 
 
+
+
 // NEXT STEPS !!!
 // Create get random question function
 // Get that function inside a render question function to display question and answers to card element
