@@ -180,7 +180,13 @@ height: 80vh;
     text-align: center;
 }
 
+.correct {
+    background-color: green;
+}
 
+.incorrect {
+    background-color: red;
+}
 
 
 

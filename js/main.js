@@ -27,6 +27,10 @@ const scoresEl = document.getElementById("scores")
 const nextButtonEl = document.getElementById("next-btn")
 const currentScoreEl = document.getElementById("current-score")
 const remainingTimeEl = document.getElementById("timer")
+const choice1El = document.getElementById("choice1")
+const choice2El = document.getElementById("choice2")
+const choice3El = document.getElementById("choice3")
+const choice4El = document.getElementById("choice4")
 
 let score = 0;
 let questionCounter = 0
@@ -34,7 +38,14 @@ var highScores = [];
 var interval;
 var timeRemaining = 60;
 var currentQuestion = 0;
+var index = 0
 
+// nextButtonEl.addEventListener("click", setNextQuestion)
+
+choice1El.addEventListener("click", setNextQuestion)
+choice2El.addEventListener("click", setNextQuestion)
+choice3El.addEventListener("click", setNextQuestion)
+choice4El.addEventListener("click", setNextQuestion)
 
 
 // Sets timer to count down during quiz
@@ -52,7 +63,7 @@ function startTimer() {
         }
     }, 1000)
 }
-// startTimer()
+startTimer()
 
 // Stops timer interval
 function stopTimer() {
@@ -62,13 +73,43 @@ function stopTimer() {
 
 
 function setNextQuestion() {
+    var userChoice = this.textContent;
 
+    if (userChoice === questions[index].answer) {
+        this.classList.add("correct")
+        // alert("Correct")
+    } else {
+        // alert("Incorrect")
+        this.classList.add("incorrect")
+        timeRemaining = timeRemaining - 5
+    }
+    index++;
+    if (index < questions.length) {
+        setTimeout(function() {
+           
+            renderQuestion()
+        }, 1000)
+       
+    } else {
+        stopTimer()
+    }
 }
+
 
 
 function renderQuestion() {
-    
+    choice1El.classList = "btn"
+    choice2El.classList = "btn"
+    choice3El.classList = "btn"
+    choice4El.classList = "btn"
+    questionEl.innerHTML = "<h2>" + questions[index].question + "</h2>";
+    choice1El.textContent = questions[index].choices[0]
+    choice2El.textContent = questions[index].choices[1]
+    choice3El.textContent = questions[index].choices[2]
+    choice4El.textContent = questions[index].choices[3]
+    // startTimer()
 }
+renderQuestion()
 
 
 

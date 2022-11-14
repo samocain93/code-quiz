@@ -4,7 +4,7 @@
 const questions = [
     {
         question: "Inside which element do we put the JavaScript file?",
-        choices: ["<Java>", "<script>", "<js", "<scripting"],
+        choices: ["<Java>", "<script>", "<js>", "<scripting>"],
         answer: "<script>"
     },
     {
