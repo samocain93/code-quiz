@@ -61,7 +61,7 @@ function startTimer() {
             cardEl.textContent = "Time is up!"
             cardEl.style.fontSize = "2rem"
         }
-    }, 100000)
+    }, 1000)
 }
 startTimer()
 

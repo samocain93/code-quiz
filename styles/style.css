@@ -60,7 +60,7 @@ h2 {
     /* background-color: sandybrown; */
     color: white;
     cursor: pointer;
-    border: 2px solid gold;
+    border: 1.5px solid gold;
 }
 
 .disabled:hover {
