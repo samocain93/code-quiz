@@ -61,7 +61,7 @@ function startTimer() {
             cardEl.textContent = "Time is up!"
             cardEl.style.fontSize = "2rem"
         }
-    }, 1000)
+    }, 100000)
 }
 startTimer()
 
@@ -80,8 +80,10 @@ function setNextQuestion() {
         // alert("Correct")
     } else {
         // alert("Incorrect")
+        
         this.classList.add("incorrect")
         timeRemaining = timeRemaining - 5
+
     }
     index++;
     if (index < questions.length) {
@@ -124,57 +126,6 @@ renderQuestion()
 // Then take to high scores page
 // Option to clear high scores from memory or return to start of game 
 
-
-
-
-
-// How to access element in the array of objects
-// console.log(questions[0].question)
-// console.log(questions[1].question)
-
-
-
-
-
-// startButtonEl.addEventListener("click", startGame)
-
-
-
-// function startGame() {
-
-//     setNextQuestion()
-
-// }
-
-
-// function setNextQuestion() {
-//     showQuestion(getRandomQuestion)
-// }
-
-
-// function showQuestion(question) {
-//     cardQuestion.innerText = question.question
-// }
-
-
-// function selectAnswer() {
-
-
-// }
-
-// function getRandomQuestion() {
-
-// }
-
-
-// function hide(element) {
-//     element.style.display = "none";
-// }
-
-
-// function show(element) {
-//     element.style.display = "block";
-// }
 
 
 

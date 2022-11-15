@@ -57,10 +57,14 @@ h2 {
 
 .btn:hover {
     transition: 0.5ms;
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
     color: white;
     cursor: pointer;
     border: 2px solid gold;
+}
+
+.disabled:hover {
+    text-decoration: none;
 }
 
 
@@ -129,6 +133,7 @@ height: 80vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+    max-width: 90vw;
 }
 
 #question-container {
@@ -136,6 +141,13 @@ height: 80vh;
     justify-content: center;
     align-items: center;
 }
+
+.question__container {
+    max-width: 90vw;
+}
+
+
+
 
 .game-controls {
     text-align: center;
