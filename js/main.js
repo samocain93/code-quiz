@@ -92,12 +92,12 @@ function setNextQuestion() {
         }, 1000)
        
     } else {
-        timeRemaining = timeRemaining - 5;
+        // timeRemaining = timeRemaining - 5;
         finalScore = timeRemaining;
+        console.log(finalScore)
         stopTimer();
         alert("Game Over! Please enter your initials in the next screen to save your high score. Thanks for playing!")
-        window.location.href = "./high-scores.html";
-        console.log("hello")
+        window.location.href = "./high-scores.html?score="+finalScore;
 
     }
 }
