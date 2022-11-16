@@ -19,8 +19,8 @@ const questions = [
     },
     {
         question: "How does a for loop start?",
-        choices: ["for (i = 0, i < 10, i++)", "for (i < 5; i++)", "for (i = 0; i < 10; i++)", "while (i = 0; i < 10; i++)"],
-        answer: "for (i = 0; i < 10; i++)"
+        choices: ["for (var i = 0, i < 10, i++)", "for (var i < 5; i++)", "for (var i = 0; i < 10; i++)", "while (var i = 0; i < 10; i++)"],
+        answer: "for (var i = 0; i < 10; i++)"
     },
     {
         question: "How do you comment in JavaScript?",

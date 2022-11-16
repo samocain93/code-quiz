@@ -31,6 +31,7 @@ const choice1El = document.getElementById("choice1")
 const choice2El = document.getElementById("choice2")
 const choice3El = document.getElementById("choice3")
 const choice4El = document.getElementById("choice4")
+const finalScoreEl = document.getElementById("user-score")
 
 let score = 0;
 let questionCounter = 0
@@ -38,7 +39,8 @@ var highScores = [];
 var interval;
 var timeRemaining = 60;
 var currentQuestion = 0;
-var index = 0
+var index = 0;
+var finalScore  = 0;
 
 // nextButtonEl.addEventListener("click", setNextQuestion)
 
@@ -77,14 +79,11 @@ function setNextQuestion() {
 
     if (userChoice === questions[index].answer) {
         this.classList.add("correct")
-        // alert("Correct")
     } else {
-        // alert("Incorrect")
-        
         this.classList.add("incorrect")
         timeRemaining = timeRemaining - 5
-
     }
+
     index++;
     if (index < questions.length) {
         setTimeout(function() {
@@ -93,7 +92,13 @@ function setNextQuestion() {
         }, 1000)
        
     } else {
-        stopTimer()
+        timeRemaining = timeRemaining - 5;
+        finalScore = timeRemaining;
+        stopTimer();
+        alert("Game Over! Please enter your initials in the next screen to save your high score. Thanks for playing!")
+        window.location.href = "./high-scores.html";
+        console.log("hello")
+
     }
 }
 
@@ -112,6 +117,12 @@ function renderQuestion() {
     // startTimer()
 }
 renderQuestion()
+
+
+// Scores Page Functionality
+
+
+
 
 
 
