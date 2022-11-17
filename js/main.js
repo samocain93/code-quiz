@@ -32,6 +32,7 @@ const choice2El = document.getElementById("choice2")
 const choice3El = document.getElementById("choice3")
 const choice4El = document.getElementById("choice4")
 const finalScoreEl = document.getElementById("user-score")
+const correctAnswersEl = document.getElementById("correct-answers")
 
 let score = 0;
 let questionCounter = 0
@@ -41,6 +42,7 @@ var timeRemaining = 60;
 var currentQuestion = 0;
 var index = 0;
 var finalScore  = 0;
+let correctAnswers = 0
 
 // nextButtonEl.addEventListener("click", setNextQuestion)
 
@@ -79,6 +81,8 @@ function setNextQuestion() {
 
     if (userChoice === questions[index].answer) {
         this.classList.add("correct")
+        correctAnswers++
+        correctAnswersEl.textContent = correctAnswers
     } else {
         this.classList.add("incorrect")
         timeRemaining = timeRemaining - 5
