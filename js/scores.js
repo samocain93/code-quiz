@@ -2,7 +2,13 @@ const initialsEl = document.getElementById("initials");
 const submitInitialsBtn = document.getElementById("high-scores-button");
 const resetBtn = document.getElementById("reset-game");
 const clearScoresBtn = document.getElementById("clear-btn");
-const 
+const highScoreListItem = document.createElement("li");
+const highScoresListEl = document.getElementById("high-scores-list")
+
+
+
+
+
 
 initialsEl.addEventListener("keyup", () => {
     submitInitialsBtn.disbled = !initialsEl.value;
@@ -38,9 +44,10 @@ saveHighScore = e => {
 
 }
 
-
-
-
+highScores.map(function(score) {
+    console.log(`${score.name}-${score.score}`)
+})
+// console.log(highScores)
 
 
 
