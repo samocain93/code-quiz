@@ -94,6 +94,7 @@ function setNextQuestion() {
     } else {
         // timeRemaining = timeRemaining - 5;
         finalScore = timeRemaining;
+        localStorage.setItem("mostRecentScore", finalScore);
         console.log(finalScore)
         stopTimer();
         alert("Game Over! Please enter your initials in the next screen to save your high score. Thanks for playing!")
