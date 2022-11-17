@@ -200,6 +200,11 @@ height: 80vh;
     background-color: red;
 }
 
+.reset__container {
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
 
 
 /* .score-container {

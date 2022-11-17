@@ -13,18 +13,26 @@
         <h1 class="score-h1">Game Over!</h1>
         <h1>Score: <span id="user-score">0</span></h1>
         <h3>Enter Initials: <input type="text" id="initials" placeholder="ABC"></h3>
+        <button class="btn submit-initials-btn" id="high-scores-button" type="submit">Submit</button>
     </div>
 
     <div class="high-scores-container" id="high-scores">
         <h1>High Scores</h1>
-        <div class="reset-container" id="scores">
-        
+        <div class="scores-container">
+            <div id="highScores" class="flex-center flex-column">
+                <ul id="high-scores-list">
+
+                </ul>
+            </div>
         </div>
+       
         <br>
+        <div id="reset-container" class="reset__container">
         <button type="button" class="btn" id="reset-game">
-            <a href="./index.html">Reset Quiz</a>
+            <a href="./index.html">Play Again</a>
          </button>
-        <button type="button" class="btn" id="clear-btn">Clear High Scores</button>
+        <button type="button" class="btn" id="clear-btn">Clear Scores</button>
+        </div>
     </div>
 
 
