@@ -4,17 +4,30 @@ const resetBtn = document.getElementById("reset-game");
 const clearScoresBtn = document.getElementById("clear-btn");
 const highScoreListItem = document.createElement("li");
 const highScoresListEl = document.getElementById("high-scores-list")
+const highScoresEl = document.getElementById("high-scores")
+const viewScoresEl = document.getElementById("view-high-scores-btn")
 
 clearScoresBtn.addEventListener("click", clearLocalStorage)
 
 
-
-
+highScoresEl.classList.add("hide")
+viewScoresEl.classList.add("hide")
 
 
 initialsEl.addEventListener("keyup", () => {
     submitInitialsBtn.disbled = !initialsEl.value;
 })
+
+submitInitialsBtn.addEventListener("click", function() {
+    // highScoresEl.classList.remove("hide")
+    viewScoresEl.classList.remove("hide")
+    
+})
+
+viewScoresEl.addEventListener("click", function() {
+    highScoresEl.classList.remove("hide")
+})
+
 
 const mostRecentScore = localStorage.getItem("mostRecentScore")
 
@@ -49,8 +62,8 @@ saveHighScore = e => {
 
 
 highScoresListEl.innerHTML = highScores.map(score => {
-    return `<li>${score.name} - ${score.score}</li>`
-}).join(" ");
+    return `<li class="high-score">${score.name} - ${score.score}</li>`
+}).join("");
 
 
 // Clear Local Storage
@@ -63,6 +76,8 @@ function clearLocalStorage() {
 function hide() {
     highScoresListEl.classList.add("hide")
 }
+
+
 
 
 
