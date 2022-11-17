@@ -205,6 +205,10 @@ height: 80vh;
     margin-top: 2rem;
 }
 
+.hide {
+    display: none;
+}
+
 
 
 /* .score-container {

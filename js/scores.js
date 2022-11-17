@@ -5,6 +5,8 @@ const clearScoresBtn = document.getElementById("clear-btn");
 const highScoreListItem = document.createElement("li");
 const highScoresListEl = document.getElementById("high-scores-list")
 
+clearScoresBtn.addEventListener("click", clearLocalStorage)
+
 
 
 
@@ -22,6 +24,7 @@ const maxHighScores = 5;
 var highScoreArr = [];
 
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+console.log(highScores)
 
 
 
@@ -42,12 +45,24 @@ saveHighScore = e => {
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
 
-}
+};
 
-highScores.map(function(score) {
-    console.log(`${score.name}-${score.score}`)
-})
-// console.log(highScores)
+
+highScoresListEl.innerHTML = highScores.map(score => {
+    return `<li>${score.name} - ${score.score}</li>`
+}).join(" ");
+
+
+// Clear Local Storage
+
+function clearLocalStorage() {
+    localStorage.clear()
+    highScoresListEl.classList.add("hide")
+};
+
+function hide() {
+    highScoresListEl.classList.add("hide")
+}
 
 
 
