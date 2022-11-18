@@ -12,6 +12,6 @@ of the saved high scores at a later point.
 
 ## Usage
 
-- Please follow the deployed GitHub page link provided to play the quiz: 
+- Please follow the deployed GitHub page link provided to play the quiz: https://samocain93.github.io/module-4-challenge/
 
 ![screenshot of landing page](assets/images/project-homepage.png)
