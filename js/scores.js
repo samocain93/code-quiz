@@ -11,25 +11,28 @@ clearScoresBtn.addEventListener("click", clearLocalStorage)
 
 
 highScoresEl.classList.add("hide")
-viewScoresEl.classList.add("hide")
+// viewScoresEl.classList.add("hide")
 
 
 initialsEl.addEventListener("keyup", () => {
-    submitInitialsBtn.disbled = !initialsEl.value;
+    submitInitialsBtn.disabled = !initialsEl.value;
 })
 
 submitInitialsBtn.addEventListener("click", function() {
     // highScoresEl.classList.remove("hide")
     viewScoresEl.classList.remove("hide")
-    
+    initialsEl.value = ""
+
 })
 
 viewScoresEl.addEventListener("click", function() {
     highScoresEl.classList.remove("hide")
+    // console.log(viewScoresEl, "clicked")
+    // const mostRecentScore = localStorage.getItem("mostRecentScore")
 })
 
 
-const mostRecentScore = localStorage.getItem("mostRecentScore")
+
 
 const maxHighScores = 5;
 
